@@ -42,7 +42,27 @@ function sumNumbers(arr) {
 }
 
 // Iteration #3.1 Bonus:
-function sum() {}
+function sum(arr) {
+  if (arr.length === 0) {
+    return 0;
+  } else if (arr.every((item) => item === 0)) {
+    return 0;
+  } else if (!arr.some(isNaN)) {
+    let numbSum = 0;
+    for (let i = 0; i < arr.length; i++) {
+      numbSum += arr[i];
+    }
+    return numbSum;
+  } else if (arr.includes(Array) = true) {
+    throw new Error("Unsupported data type sir or ma'am");
+  } else {
+    let arrLength = 0;
+    for (let i = 0; i < arr.length; i++) {
+      arrLength += arr[i].length;
+    }
+    return arrLength;
+  }
+}
 
 // Iteration #4: Calculate the average
 // Level 1: Array of numbers
